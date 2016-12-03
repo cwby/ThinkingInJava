@@ -3,3 +3,4 @@ Contains code that answers the exercises in the book, Thinking In Java, 4th edit
 There is a subdirectory for each chapter that contains exercises, with the 1st chapter subdirectory name starting with "A", the second with "B", etc.
 
 The source code for examples in the book is available via http://www.mindviewinc.com/TIJ4/CodeInstructions.html 
+I also put the source code in my Eclipse & Java Workspace, in the directory "ThinkingInJava_SourceCode".
