@@ -1,4 +1,4 @@
-package thinkingInJava;
+package AObj;
 
 class StaticTest {
 	static int i = 0;

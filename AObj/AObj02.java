@@ -1,4 +1,4 @@
-package thinkingInJava;
+package AObj;
 
 // http://greggordon.org/java/tij4/solutions.htm
 public class AObj02 {

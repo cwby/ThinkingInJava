@@ -1,4 +1,4 @@
-package thinkingInJava;
+package AObj;
 
 public class AObj03 {
 	public static void main(String[] args) {

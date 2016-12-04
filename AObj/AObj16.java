@@ -1,4 +1,4 @@
-package thinkingInJava;
+package AObj;
 
 //: initialization/Overloading.java
 //Demonstration of both constructor
@@ -11,7 +11,7 @@ import static net.mindview.util.Print.*;
  */
 class AObj16 { // was Tree
 	/** 
-	 * this p061Ex16 self-named function takes one argument, the tree height (an integer).
+	 * this AObj16 self-named function takes one argument, the tree height (an integer).
 	 */
 	 int height;
 	 /** Seedlings (no given height) get a height of zero.
@@ -40,36 +40,3 @@ void info(String s) {
 print(s + ": Tree is " + height + " feet tall");
 }
 }
-/** This is on overloading example.
- * I am not sure what that is yet - it comes later in the book.
- * @author General Use
- *
- */
-public class Overloading {
-public static void main(String[] args) {
-for(int i = 0; i < 5; i++) {
-AObj16 t = new AObj16(i);
-t.info();
-t.info("overloaded method");
-}
-// Overloaded constructor:
-new AObj16();
-}
-} /* Output:
-Creating new Tree that is 0 feet tall
-Tree is 0 feet tall
-overloaded method: Tree is 0 feet tall
-Creating new Tree that is 1 feet tall
-Tree is 1 feet tall
-overloaded method: Tree is 1 feet tall
-Creating new Tree that is 2 feet tall
-Tree is 2 feet tall
-overloaded method: Tree is 2 feet tall
-Creating new Tree that is 3 feet tall
-Tree is 3 feet tall
-overloaded method: Tree is 3 feet tall
-Creating new Tree that is 4 feet tall
-Tree is 4 feet tall
-overloaded method: Tree is 4 feet tall
-Planting a seedling
-*///:~ 

@@ -1,4 +1,4 @@
-package thinkingInJava;
+package AObj;
 public class AObj06 {
 	static String c = new String("aoeu");
 	static int storage(String s) {

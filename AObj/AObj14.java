@@ -1,9 +1,9 @@
-package thinkingInJava;
+package AObj;
 
 //: object/HelloDate.java
 import java.util.*;
 /** The first Thinking in Java example program.
-* Displays a string and today’s date.
+* Displays a string and todayï¿½s date.
 * @author Bruce Eckel
 * @author www.MindView.net
 * @version 4.0
@@ -20,10 +20,10 @@ public class AObj14 { // was HelloDate, with a list comment added
 * 
 */
 public static void main(String[] args) {
-System.out.println("Hello, it’s: ");
+System.out.println("Hello, itï¿½s: ");
 System.out.println(new Date());
 }
 } /* Output: (55% match)
-Hello, it’s:
+Hello, itï¿½s:
 Wed Oct 05 14:39:36 MDT 2005
 *///:~ 

@@ -1,6 +1,6 @@
-package thinkingInJava;
+package AObj;
 
 class ATypeName {
-	// nothing happens. part of p061Ex3
+	// nothing happens. part of AObj03
 
 }

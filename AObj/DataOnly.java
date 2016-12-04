@@ -1,4 +1,4 @@
-package thinkingInJava;
+package AObj;
 
 class DataOnly {
 	int i;

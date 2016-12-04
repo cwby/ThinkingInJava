@@ -1,4 +1,4 @@
-package thinkingInJava;
+package AObj;
 
 //: object/Documentation1.java
 /** A class comment */
