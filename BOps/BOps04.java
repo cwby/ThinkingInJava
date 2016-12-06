@@ -5,7 +5,7 @@ package BOps;
  *  * @author joe
  *
  */
-public class BObj04 {
+public class BOps04 {
 	/** Create a method that calculate velocity, given distance and time 
 	 * @param distanceInMeters Distance (in meters)
 	 * @param timeInSeconds Time (in seconds)
@@ -20,7 +20,7 @@ public class BObj04 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		BObj04 myObj = new BObj04();
+		BOps04 myObj = new BOps04();
 		double myV = myObj.velocity(120,11);
 		System.out.println("myV="+ myV);
 
