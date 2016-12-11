@@ -3,35 +3,40 @@ package AObj;
 /** Everything is an Object, Exercise 9
  * (2) Write a program that demonstrates that autoboxing works 
  * for all the primitive types and their wrappers.
- * <br> THIS FAILS! it throws many exceptions, each saying, "cannot convert from [some primitive type] to [the corresponding wrapper type]
- * <br> The solution at <a href="http://greggordon.org/java/tij4/object/AutoboxTest.java">a webpage with solutions</a> also fails the same way. 
- * <br> per the book: automatically convert from a primitive to a wrapper type
- * using a shorthand ("autoboxing").
- * <br> "Character c = 'x' ;" is shorthand for 
- * "Character c = new Character('x') ;"
- * <br> This is also "autoboxing" (converting a wrapper object to 
- * a primitive:
- * <br> char ch = c ;
+ * <br> Boxing is making an object that just contains a primitive, so that it can be manipulated in operations that require objects.
+ * <br> Autoboxing is automatic boxing; i.e., java will automatically convert primitives to objects when necessary, in most situations.
+ * <br> Unboxing is converting an object into a primitive.
+ * <br> Auto-unboxing is automatic unboxing; i.e., java will (try to?) automatically convert objects to primitives, when necessary, in most situations.
+ * <br> [My question: What if the object does not just point to a single value, but rather to something more complex?]
  * @author joe
  */
 public class AObj09 {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		/** Autobox: Assign a primitive to an object, and java will automatically put the primitive in an object wrapper. */
 		Character c = 'x';
+		/** Auto-unbox: Assign an wrapper object to the associated primitive, and java will automatically put the object value into the primitive. */
 		char ch = c ;
-		boolean bo = true ;
-		Boolean b = bo;
-		byte by = 1;
-		Byte byt = by;
-		short s = 1;
-		Short sh = s;
-		int i = 1;
-		Integer in = i;
-		long l = 1;
-		Long lo = l;
-		float f = 1;
-		Float fl = f;
-		double d = 1;
-		Double dou = d;
+		System.out.println("Character c is " + c + " and char ch is " + ch);
+		Boolean b = true;
+		boolean bo = b ;
+		System.out.println("the wrapper object Boolean bo is " + b + " and the primitive boolean bo is " + bo);
+		Byte byt = 1;
+		byte by = byt;
+		System.out.println("   Byte: " + byt + "      byte: " + by);
+		Short sh = 1;
+		short s = sh;
+		System.out.println("  Short: " + sh + "     short: " + s);
+		Integer in = 1;
+		int i = in;
+		System.out.println("Integer: " + in + "       int: " + i);
+		Long lo = 1L;
+		long l = lo;
+		System.out.println("   Long: " + lo + "      long: " + l);
+		Float fl = 0.32f;
+		float f = fl;
+		System.out.println("  Float: " + fl + "  float: " + f);
+		Double dou = 1d;
+		double d = dou;
+		System.out.println(" Double: " + dou + "  double: " + d);
 	}
 }
