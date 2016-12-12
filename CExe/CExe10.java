@@ -13,7 +13,6 @@ package CExe;
  * @author joe
  *
  */
-
 public class CExe10 {
 
 	/**
@@ -54,5 +53,4 @@ public class CExe10 {
 			}
 		}
 	}
-
 }
