@@ -25,7 +25,7 @@ public class CExe10 {
 		 * and the smaller number must be between 1000/(larger number) and the larger number. 
 		 */
 		for (int i = (int) Math.sqrt(1000); i <= 99; i++) {
-			for (int j = 1000 / i; j <= i ; j++) {
+			for (int j = (1000 / i) + 1; j <= i ; j++) {
 				/** the product may not end end in a pair of zeros, so skip pairs that both end in zero. */
 				if ((i % 10 == 0) & (j % 10 == 0)) continue ;
 				/** decompose i, j, and their product into their component digits by turning them into Strings. */
@@ -35,19 +35,27 @@ public class CExe10 {
 				int nMatched = 0 ;
 				EachComponentDigit:
 				for (char c : components ) {
-					for (int p = 0; p < product.length ; p++) {
-					//for (char p : product ) {
+					for (int p = 0; p < (product.length - nMatched) ; p++) {
 						if (product[p] == c) {
 							/** This product digit is matched to a component digit, so make it a letter so it will not be matched to another product digit. */
 							product[p] = 'x' ;
 							nMatched++ ;
-							if (nMatched == 4) {
-								System.out.println("Vampire number: compenents: " + i + ", " + j + "  product: " + (i * j));
+							// if this is not the last element to be checked by this "for" loop, ... 
+							if (p < (product.length - nMatched)) {
+								// ... shift the unmatched elements of the array to the left, overwriting the newly matched element.
+								for (int e = p; e < (product.length - nMatched); e++) {
+									product[e] = product[e + 1];
+								}
+							}
+							if (nMatched == product.length) {
+								System.out.println("Vampire number: components: " + i + ", " + j + "  product: " + (i * j));
 								break EachComponentDigit ;
 							}
 							/** We are done with this component digit, so go to the next one. */
 							continue EachComponentDigit ;
 						}
+						/** if that was the last component digit, and we found no match (we got past if (product[p] == c), this is not a vampire number, so go to the next number. */
+						if (p == product.length) break EachComponentDigit ;
 					}
 				}
 			}
