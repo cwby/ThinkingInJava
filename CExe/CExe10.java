@@ -2,14 +2,15 @@ package CExe;
 
 /** Controlling Execution, Exercise 10: 
  * (5) A vampire number has an even number of digits and is formed
- *  by multiplying a pair of numbers containing half the number of digits of the result.
- *  The digits are taken from the original number in any order. 
- *  Pairs of trailing zeroes are not allowed.
- * Examples include:
- * 1260 = 21 * 60
- * 1827 = 21 * 87
- * 2187 = 27 * 81
- * Write a program that finds all the 4-digit vampire numbers. (Suggested by Dan Forhan.)
+ * by multiplying a pair of numbers containing half the number of digits of the result.
+ * The digits are taken from the original number in any order.
+ * Pairs of trailing zeroes are not allowed.
+ * Examples include:<ul>
+ * <li>1260 = 21 * 60</li>
+ * <li>1827 = 21 * 87</li>
+ * <li>2187 = 27 * 81</li>
+ * </ul>Write a program that finds all the 4-digit vampire numbers. (Suggested by Dan Forhan.)
+ * 
  * @author joe
  *
  */

@@ -3,7 +3,7 @@ package AObj;
 //: object/HelloDate.java
 import java.util.*;
 /** The first Thinking in Java example program.
-* Displays a string and today�s date.
+* Displays a string and today's date.
 * @author Bruce Eckel
 * @author www.MindView.net
 * @version 4.0

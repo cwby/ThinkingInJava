@@ -1,8 +1,8 @@
 package CExe;
 
 import static net.mindview.util.Print.print;
-import static net.mindview.util.Print.printnb;
-import static net.mindview.util.Range.range;
+// import static net.mindview.util.Print.printnb;
+// import static net.mindview.util.Range.range;
 
 /** Controlling Execution, Exercise 6: 
  * (2) Modify the two test( ) methods in the previous two programs
