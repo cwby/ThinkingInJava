@@ -24,7 +24,6 @@ public class DIni12 { // I will call the class DIni12 rather than Tank
 	static int i = 1;
 	/**
 	 * Create a "tank" (a DIni12 object), saying whether it is full
-	 * @param b Specify true if you want a full DIni12, or false if you want an empty DIni12.
 	 */
 	DIni12() {
 		instance = i++ ;
