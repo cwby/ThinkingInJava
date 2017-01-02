@@ -1,6 +1,6 @@
 package BOps;
 
-/** Objects, Exercise 3:
+/** Operators, Exercise 3:
  * (1) Create a class containing a float and use it to demonstrate aliasing during method calls. 
  */
 public class BOps03 {

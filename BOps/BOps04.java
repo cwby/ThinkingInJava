@@ -1,6 +1,6 @@
 package BOps;
 
-/** Objects, Exercise 4:
+/** Operators, Exercise 4:
  * (2) Write a program that calculates velocity using a constant distance and a constant time.  
  *  * @author joe
  *

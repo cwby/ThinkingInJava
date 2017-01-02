@@ -1,6 +1,6 @@
 package BOps;
 
-/** Objects, Exercise 5:
+/** Operators, Exercise 5:
  * (2) Create a class called Dog [I will call it BOps05 instead] containing two Strings: name and says. 
  * In main( ), create two dog objects with names “spot” (who says, “Ruff!”) 
  * and “scruffy” (who says, “Wurf!”). Then display their names and what they say. 
